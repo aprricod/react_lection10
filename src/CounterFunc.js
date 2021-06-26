@@ -1,13 +1,13 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
-export const CounterFunc = (props) => {
-    const [counter, setCounter] = React.useState(props.start || 0)
-    const s = props.step || 1
+export const CounterFunc = ({start = 0, step = 1}) => {
+    const [counter, setCounter] = useState(start)
+    
     return (
         <>
          {counter}   
          <br/>
-         <button onClick={()=> setCounter(counter + s)}>Increment</button>
+         <button onClick={()=> setCounter(counter + step)}>Increment</button>
         </>
     )
 }

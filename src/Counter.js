@@ -18,6 +18,7 @@ export default class Counter extends Component {
         return (
             <>
             {this.state.counter}
+            <br/>
                 <button onClick={this.handleButton}>Увеличить значение</button>
             </>
         )
