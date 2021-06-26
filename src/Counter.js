@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Counter extends Component {
-    constructor(props) {
-        super(props)
+class Counter extends React.Component {
     
-        this.state = {
+    static defaultProps = {start: 0, step: 1}
+    
+        state = {
              counter: this.props.start || 0
         }
-        this.handleButton = this.handleButton.bind(this)
-    }
-
-    handleButton(e) {
+    
+    handleButton=(e)=> {
         this.setState({counter: this.state.counter + this.props.step})
     }
     
@@ -24,3 +22,4 @@ export default class Counter extends Component {
         )
     }
 }
+export default Counter

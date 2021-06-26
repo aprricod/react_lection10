@@ -5,7 +5,7 @@ import { CounterFunc } from './CounterFunc';
 function App() {
   return (
     <div className="App">
-   <Counter step={2} start={5}/>
+   <Counter step={2} start={5} />
    <br/>
    <CounterFunc step={2} start={5}/>
     </div>
