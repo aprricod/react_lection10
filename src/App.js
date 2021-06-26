@@ -1,13 +1,13 @@
-import './App.css';
-import Counter from './Counter';
-import { CounterFunc } from './CounterFunc';
+import "./App.css";
+import { RefEx } from "./RefEx";
+import { RefExFunc } from "./RefExFunc";
 
 function App() {
   return (
     <div className="App">
-   <Counter step={2} start={5} />
-   <br/>
-   <CounterFunc step={2} start={5}/>
+      <RefEx />
+
+      <RefExFunc />
     </div>
   );
 }

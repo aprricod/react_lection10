@@ -1,15 +1,11 @@
 import React, { createRef } from "react";
 
-export class Counter2 extends React.Component {
+export class RefEx extends React.Component {
   inputRef = createRef();
 
-  handleClick = (e) => {
+  handleClick = () => {
     console.log(this.inputRef);
   };
-
-  componentDidMount() {
-    this.inputRef.current.focus();
-  }
 
   render() {
     return (
